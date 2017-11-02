@@ -1,0 +1,16 @@
+#!/usr/bin/node
+ 
+var fs = require('fs');
+
+var file = process.argv[2];
+
+fs.readFile(file, function(err, buf){
+  if(err){
+    console.log(err.message);
+    process.exit(1);
+  }else{
+    cosole.log(buf.toString('utf8'));
+  }
+});
+
+
