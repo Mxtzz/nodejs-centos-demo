@@ -5,7 +5,7 @@ var fs = require('fs');
 var width = 16;
 var height = 16;
 
-var pixelByteSize = width = height *4;
+var pixelByteSize = width = height * 4;
 var totalSize = pixelByteSize + 54;
 
 var buf = new Buffer(totalSize);
@@ -30,7 +30,7 @@ for(var i = 54; i<totalSize; i += 4){
 }
 
 fs.writeFile('./out.bmp',buf,function(err){
-  if(err != null){
+  if(err !== null){
     console.error(err);
     process.exit(1);
   }

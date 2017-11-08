@@ -4,7 +4,7 @@ console.log('architecture:',process.arch);
 console.log('plantform:',process.platform);
 
 console.log('process id:',process.pid);
-console.log('exePath:',process.execPath)
+console.log('exePath:',process.execPath);
 
 console.log('node version:',process.version);
 console.log('user id:',process.getuid());
